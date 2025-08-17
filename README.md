@@ -7,9 +7,14 @@ Simple ETL Customer Pipeline: A mini data engineering project for cleaning, tran
 This project demonstrates a simple Data Engineering pipeline for customer data.
 The dataset is stored in a csv file (tab-separated) and contains customer information (ID, Name, Age, City).
 The goal is to clean, transform, and prepare the data for further use (analysis, ML, or storage).
+
+
+
 🔧 Steps in the Pipeline
 
  Extract Load customer data from .csv file using pandas.
+
+
 
 Transform
         Convert column types:
@@ -21,6 +26,9 @@ Transform
         Remove duplicates.
         Normalize text values (fix inconsistent city names, trim whitespaces).
         Validate data (Age range, unique IDs).
+
+
+
 
 Load
         Export the cleaned dataset to CSV.
