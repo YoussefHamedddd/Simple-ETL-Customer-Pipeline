@@ -9,10 +9,9 @@ The dataset is stored in a csv file (tab-separated) and contains customer inform
 The goal is to clean, transform, and prepare the data for further use (analysis, ML, or storage).
 🔧 Steps in the Pipeline
 
-    Extract
-        Load customer data from .txt file using pandas.
+ Extract Load customer data from .csv file using pandas.
 
-    Transform
+Transform
         Convert column types:
             CustomerID → int64
             Name → string
@@ -23,13 +22,14 @@ The goal is to clean, transform, and prepare the data for further use (analysis,
         Normalize text values (fix inconsistent city names, trim whitespaces).
         Validate data (Age range, unique IDs).
 
-    Load
+Load
         Export the cleaned dataset to CSV.
         Ready to be stored in a database or data warehouse.
 
+        
 📂 Files in Repository
 
-    customers.txt → raw data file.
+customers.csv → raw data file.
     clean_customers.csv → cleaned dataset.
-    data_pipeline.py → Python script for ETL pipeline.
+    data_pipeline.ipynb → Python script for ETL pipeline.
     README.md → project description.
